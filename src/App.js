@@ -29,7 +29,7 @@ class App extends React.Component {
       `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`
     );
     const data = await api_call.json();
-console.log(data)
+
     if (city && country) {
       if (data.cod === "404") {
         this.setState({
@@ -54,7 +54,6 @@ console.log(data)
           error: ""
         });
       }
-      console.log("DATA", data);
     } else {
       this.setState({
         temperature: undefined,
@@ -71,7 +70,7 @@ console.log(data)
   render() {
     const emptyData =
       this.state.city === undefined || this.state.country === undefined;
-    console.log("EMPTY DATA: ", emptyData);
+
     return (
       <div>
         {emptyData ? (

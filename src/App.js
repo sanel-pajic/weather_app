@@ -76,10 +76,10 @@ class App extends React.Component {
         {emptyData ? (
           <div className="main-block">
             <div className="container" style={{ marginTop: "3%" }}>
-              <div className="col-xs-5 title-container">
+              <div className="title-container">
                 <Titles />
               </div>
-              <div className="col-xs-7 form-container">
+              <div className="form-container">
                 <Form getWeather={this.getWeather} />
                 <Weather
                   temperature={this.state.temperature}

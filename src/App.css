@@ -6,7 +6,6 @@ body {
   font-family: "Open Sans", serif;
   background: linear-gradient(to right, #f3f1ef, #c4dbe9);
   height: 70vh;
-  min-width: 800px;
 }
 
 .container {
@@ -178,4 +177,55 @@ button:active {
   letter-spacing: 1px;
   font-weight: 300;
   font-size: 1.8em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 394px;
+  }
+
+  .title-container {
+    background: url("img/bg-1.jpg") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    padding-top: 8vh;
+    width: 394px;
+  }
+  .form-container {
+    background-color: #414a52ef;
+    width: 394px;
+    height: 700px;
+    padding-top: 5vh;
+  }
+  .form-responsive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-div-responsive {
+    display: flex;
+    justify-content: space-around;
+  }
+  button {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .weather__error {
+    margin-top: 2vh;
+    font-size: 1.5em;
+    margin-left: 5vh;
+  }
+  .weather-info {
+    margin-top: 3vh;
+  }
 }

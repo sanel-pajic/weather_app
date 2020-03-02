@@ -179,7 +179,7 @@ button:active {
   font-size: 1.8em;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 414px) {
   .container {
     display: flex;
     flex-direction: column;

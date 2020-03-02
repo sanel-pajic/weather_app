@@ -179,7 +179,7 @@ button:active {
   font-size: 1.8em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -214,7 +214,7 @@ button:active {
     justify-content: space-around;
   }
   button {
-    width: 150px;
+    width: 50vw;
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -141,6 +141,7 @@ button {
   background-color: #f16051;
   color: #fff;
   font-weight: 100;
+  width: 200px;
 }
 
 button:active {
@@ -179,6 +180,19 @@ button:active {
   font-size: 1.8em;
 }
 
+.form-responsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+.form-div-responsive {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
@@ -186,6 +200,17 @@ button:active {
     justify-content: center;
     align-items: center;
     width: 394px;
+  }
+
+  .form-responsive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8vh;
+  }
+  .form-div-responsive {
+    display: flex;
+    justify-content: space-around;
   }
 
   .title-container {
@@ -204,17 +229,9 @@ button:active {
     height: 700px;
     padding-top: 5vh;
   }
-  .form-responsive {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .form-div-responsive {
-    display: flex;
-    justify-content: space-around;
-  }
+
   button {
-    width: 50vw;
+    width: 40vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -227,5 +244,17 @@ button:active {
   }
   .weather-info {
     margin-top: 3vh;
+  }
+  .title-container__copyright {
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 6vh;
+    color: #fff;
+    opacity: 0.5;
   }
 }
